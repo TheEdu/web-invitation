@@ -1,0 +1,343 @@
+/******************************************************************/
+/******************************* LAYOUT **************************/
+/******************************************************************/
+
+.height-full {
+	height: 100%;
+}
+
+.bd-highlight {
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.15);
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("http://luymaxi.onlyinvitaciones.com/images/hero.jpg");
+  background-image: url("https://cdn0.matrimonios.cl/usr/2/5/9/9/cfb_225295.jpg");
+  background-image: url("https://static3.depositphotos.com/1006124/213/i/450/depositphotos_2130396-stock-photo-wedding-invitation-border-elegant-satin.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#presentation .container {
+	min-height: 500px; 
+}
+
+#information .container {
+}
+
+#galery .container {
+	min-height: 500px;
+	/*background-color: blue;*/
+}
+
+#grift .container {
+	min-height: 500px;
+}
+
+#confirmation .container {
+	/*min-height: 500px;
+	background-color: yellow;*/
+}
+
+#booking .container {
+	min-height: 500px;
+	background-color: pink;
+}
+
+
+
+/******************************************************************/
+/******************************* CONTACT **************************/
+/******************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+.align-center {
+  text-align: center;
+}
+
+/*.get-in-touch {
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}*/
+
+.get-in-touch input, .get-in-touch select {
+  background: transparent;
+}
+
+select {
+  border-radius: .10rem;
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+.get-in-touch .title {
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 36px;
+  line-height: 48px;
+  padding-bottom: 48px;
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+.contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+}
+.contact-form .label {
+  position: absolute;
+  left: 5px;
+  bottom: 11px;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #888;
+  cursor: text;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+input:-internal-autofill-previewed {
+  background-color: white !important;
+}
+
+/******************************************************************/
+/******************************* GELLERY **************************/
+/******************************************************************/
+.gallery-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallery-column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/******************************************************************/
+/******************************* FOOTER ***************************/
+/******************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700);
+body {
+ font-family:Rubik,sans-serif;
+ position:relative;
+ font-weight:400;
+ font-size:15px
+}
+ul {
+ padding:0;
+ margin:0
+}
+li {
+ list-style:none
+}
+a:focus,a:hover {
+ text-decoration:none;
+ -webkit-transition:.3s ease;
+ -o-transition:.3s ease;
+ transition:.3s ease
+}
+a:focus {
+ outline:0
+}
+img {
+ max-width:100%
+}
+p {
+ font-size:16px;
+ line-height:30px;
+ color:#898b96;
+ font-weight:300
+}
+h4 {
+ font-family:Rubik,sans-serif;
+ margin:0;
+ font-weight:400;
+ padding:0;
+ color:#363940
+}
+a {
+ color:#5867dd
+}
+.no-padding {
+ padding:0!important
+}
+.go_top {
+ line-height:40px;
+ cursor:pointer;
+ width:40px;
+ background:#5867dd;
+ color:#fff;
+ position:fixed;
+ -webkit-box-shadow:0 4px 4px rgba(0,0,0,.1);
+ box-shadow:0 4px 4px rgba(0,0,0,.1);
+ -webkit-border-radius:50%;
+ border-radius:50%;
+ right:-webkit-calc((100% - 1140px)/ 2);
+ right:calc((100% - 1140px)/ 2);
+ z-index:111;
+ bottom:80px;
+ text-align:center
+}
+.go_top span {
+ display:inline-block
+}
+.footer-big {
+ padding:40px 0 15px 0
+}
+.footer-big .footer-widget {
+ margin-bottom:40px
+}
+.footer--light {
+ background:#e7e8ed
+}
+.footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
+ color:#898b96
+}
+.footer-menu {
+ padding-left:48px
+}
+.footer-menu ul li a {
+ font-size:15px;
+ line-height:32px;
+ -webkit-transition:.3s;
+ -o-transition:.3s;
+ transition:.3s
+}
+.footer-menu ul li a:hover {
+ color:#5867dd
+}
+.footer-menu--1 {
+ width:100%
+}
+.footer-widget-title {
+ line-height:42px;
+ margin-bottom:10px;
+ font-size:18px
+}
+.mini-footer {
+ background:#192027;
+ text-align:center;
+ padding:32px 0
+}
+.mini-footer p {
+ margin:0;
+ line-height:26px;
+ font-size:15px;
+ color:#999
+}
+.mini-footer p a {
+ color:#5867dd
+}
+.mini-footer p a:hover {
+ color:#34bfa3
+}
+.widget-about img {
+ display:block;
+ margin-bottom:30px
+}
+.widget-about p {
+ font-weight:400
+}
+.widget-about .contact-details {
+ margin:30px 0 0 0
+}
+.widget-about .contact-details li {
+ margin-bottom:10px
+}
+.widget-about .contact-details li:last-child {
+ margin-bottom:0
+}
+.widget-about .contact-details li span {
+ padding-right:12px
+}
+.widget-about .contact-details li a {
+ color:#5867dd
+}
+@media (max-width:991px) {
+ .footer-menu {
+  padding-left:0
+ }
+}
